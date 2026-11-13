@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Host this page (SharePoint, Confluence, GitHub Pages…) and put its URL in
+     background.js → UNINSTALL_URL. Chrome opens it after the extension is removed. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conga Platform Inspector removed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f6f5fb; --card:#fff; --text:#17152b; --text2:#4a4766; --border:#e6e3f1; --accent:#7c3aed; --warn:#b45309; --warn-soft:#fff7e6; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0f0e17; --card:#1a1826; --text:#f1effa; --text2:#c4c0d8; --border:#2c2940; --accent:#a78bfa; --warn:#fbbf24; --warn-soft:#2d2410; } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 'Google Sans', system-ui, sans-serif; }
+    .wrap { max-width:720px; margin:0 auto; padding:48px 20px; }
+    .hero { padding:30px; border-radius:18px; color:#fff; background:linear-gradient(135deg,#4c1d95,#7c3aed 55%,#a855f7); }
+    .hero h1 { margin:0 0 6px; font-size:clamp(24px,4vw,32px); line-height:1.2; }
+    .hero p { margin:0; opacity:.92; }
+    .card { margin-top:16px; padding:20px; border-radius:14px; background:var(--card); border:1px solid var(--border); }
+    .warn { background:var(--warn-soft); border-color:color-mix(in srgb, var(--warn) 35%, transparent); }
+    h2 { margin:0 0 8px; font-size:18px; }
+    ol, ul { margin:6px 0 0 18px; padding:0; color:var(--text2); }
+    p { color:var(--text2); }
+    code { background:rgba(124,58,237,.1); padding:1px 5px; border-radius:5px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Conga Platform Inspector was removed</h1>
+      <p>Thanks for using it. Here's what that means for your saved data.</p>
+    </div>
+    <div class="card warn">
+      <h2>Your saved data was deleted with it</h2>
+      <p>Favorites, saved queries, query history, settings, pinned objects and flag favorites lived inside the extension, so Chrome removed them too. If you exported a backup before removing it, you can bring everything back.</p>
+    </div>
+    <div class="card">
+      <h2>Installing a new version?</h2>
+      <ol>
+        <li>Load the new version: <code>chrome://extensions</code> → Developer mode → <b>Load unpacked</b>.</li>
+        <li>On the welcome page that opens, click <b>Import a backup file</b> and pick your backup.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>Next time: keep your data without a backup</h2>
+      <ul>
+        <li>Replace the files in the <b>same folder</b> with the new version, then click <b>↻ Reload</b> on <code>chrome://extensions</code>. Nothing is lost.</li>
+        <li>Before removing the extension or loading it from a different folder, export first: panel → Settings → Backup &amp; Share → <b>Export</b>.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
